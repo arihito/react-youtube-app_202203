@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { RootRouter } from './Route'
 import { createTheme, CssBaseline, ThemeProvider } from '@material-ui/core'
+import GlobalStyle from './GlobalStyle'
 
 const theme = createTheme()
 
@@ -11,6 +12,7 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <CssBaseline />
+        <GlobalStyle />
         <RootRouter />
       </BrowserRouter>
     </ThemeProvider>
